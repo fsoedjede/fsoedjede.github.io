@@ -1,0 +1,17 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+title: Felix SOEDJEDE
+subtitle: ~
+email: soefelix[at]gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+    Blog of Felix SOEDJEDE, an IT Engineer passionate by Entrepreneurship,
+    Software Craftsmanship, Clean Code, Structured thoughts, PHP, Symfony, Python, etc.
+
+social_media_links:
+    twitter: https://www.twitter.com/fsoedjede
+    github: https://www.github.com/fsoedjede
+
+# Insert your disqus shortname
+#disqus:
+#    shortname:

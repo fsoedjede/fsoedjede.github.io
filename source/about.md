@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about
 ---
 
 ## Why this blog?
@@ -31,8 +30,8 @@ Interesting stuff I found while reading other blogs, things that can help in my 
 
 - easily find my personal achievement
 
-I'm not the type of person who notes everything he did, etc. I'm just a `doer`.\
-I link doing things and doing them well.\
+I'm not the type of person who notes everything he did, etc. I'm just a `doer`.
+I link doing things and doing them well.
 Now I'm trying to be a `writer` also to improve more than just reading, to express my creativity.
 
 --

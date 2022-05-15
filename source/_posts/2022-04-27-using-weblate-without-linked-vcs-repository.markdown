@@ -1,8 +1,12 @@
 ---
 layout: post
 title:  "Using Weblate without linked vcs repository"
-date:   2022-04-27 02:35:00 +0200
-categories: localization weblate
+date:   2022-04-27T02:35:00+0200
+categories:
+    - post
+tags:
+    - localization
+    - weblate
 ---
 
 > Disclaimer: This post is a temporary post create during the initialisation of this blog.
@@ -37,6 +41,6 @@ There is two ways to create a new `translation component` without vcs repository
 
 Click on `Add new translation component` and you will see these options:
 
-![Options to choose to create component without vcs repository](/assets/images/using-weblate-without-linked-vcs-repository-img-2.png)
+![Options to choose to create component without vcs repository]({{ site.url }}/assets/images/using-weblate-without-linked-vcs-repository-img-2.png)
 
 Choose the one which matches the most your need.
