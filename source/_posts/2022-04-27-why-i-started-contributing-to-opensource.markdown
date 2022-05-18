@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Why I started contributing to opensource?"
-date:   2022-04-27 02:35:00 +0200
-categories: opensource
+date:   2022-04-27T02:35:00+0200
+categories:
+    - post
+tags:
+    - opensource
 ---
 
 > Disclaimer: This post is a temporary post create during the initialisation of this blog.

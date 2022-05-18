@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Weblate without linked vcs repository"
-date:   2022-04-27 02:35:00 +0200
+date:   2022-04-27T02:35:00+0200
 categories:
+    - post
+tags:
     - localization
     - weblate
 ---
