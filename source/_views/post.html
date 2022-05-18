@@ -5,16 +5,16 @@
 {% endblock %}
 
 {% block content_wrapper %}
-    <article>
+    <article itemscope itemtype="https://schema.org/BlogPosting">
         <header>
-            <h2>{{ page.title }}</h2>
+            <h2 itemprop="name headline">{{ page.title }}</h2>
             <small class="post-meta">
-                <time class="dt-published" datetime="{{ page.date|date('c') }}">
+                <time class="dt-published" datetime="{{ page.date|date('c') }}" itemprop="datePublished">
                     {{ page.date|date('M j, Y') }}
                 </time>
             </small>
         </header>
-        <div>
+        <div itemprop="articleBody">
             {{ page.blocks.content|raw }}
         </div>
         {% if page.categories %}
