@@ -13,5 +13,5 @@ indent_size = 4
 indent_style = space
 
 # Markdown customizations
-[*.md]
+[{*.md,*.qmd}]
 trim_trailing_whitespace = false

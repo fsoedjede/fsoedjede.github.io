@@ -1,0 +1,25 @@
+project:
+    type: website
+
+website:
+    title: 'Felix SOEDJEDE'
+    description: |
+        Blog of *Felix SOEDJEDE*, an IT Engineer passionate by `Entrepreneurship`,
+        `Software Craftsmanship`, `Clean Code`, `Structured thoughts`, `PHP`, `Symfony`, `Python`, `Pandoc`, etc.
+    #email: soefelix[at]gmail.com
+    navbar:
+        background: dark
+        pinned: true
+        right:
+            - about.qmd
+            -
+                icon: github
+                href: https://github.com/fsoedjede
+            -
+                icon: twitter
+                href: https://twitter.comfsoedjede
+
+format:
+    html:
+        theme: cosmo
+        css: styles.css
