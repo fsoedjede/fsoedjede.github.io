@@ -11,7 +11,5 @@ $ quarto preview
 ## Publish
 
 ```bash
-$ quarto render
-$ git commit ...
-$ git push
+$ quarto publish gh-pages
 ```
