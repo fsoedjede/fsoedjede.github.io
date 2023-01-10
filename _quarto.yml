@@ -3,6 +3,7 @@ project:
 
 website:
     title: 'Felix SOEDJEDE'
+    favicon: profile.png
     description: |
         Blog of *Felix SOEDJEDE*, an IT Engineer passionate by `Entrepreneurship`,
         `Software Craftsmanship`, `Clean Code`, `Structured thoughts`, `PHP`, `Symfony`, `Python`, `Pandoc`, etc.
