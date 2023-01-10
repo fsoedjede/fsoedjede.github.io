@@ -1,0 +1,80 @@
+---
+title: "Setting Redis user and password in Docker environnement"
+date: 2023-01-10
+categories: [docker, redis]
+image: redis.svg
+---
+
+## Summary
+
+For several years, locally, I used redis without needing to use a password to secure access.
+
+Recently, while migrating an application from a VM to Kubernetes, I ran into a problem with redis requiring a user and
+password.
+
+In the VM, redis was configured without using a specific user but in the Kubernetes environment, it is required.
+
+The redis cluster is shared by multiple applications; which requires access to namespaces to be secure.
+
+So the question is: **how to set up a secure redis user?**
+
+## Approach to solution
+
+> Not being Devops, this solution can be totally trivial.
+
+### Option 1: Use the `--requirepass` option
+
+Example:
+
+```yaml
+version: '3.9'
+services:
+    redis:
+        image: 'redis:5-alpine'
+        command: redis-server --requirepass mypassword
+        ports:
+            - '6379:6379'
+```
+
+This option is the one that I found the most, but it does not correspond to my need.
+
+It does not allow to define a user and a password.
+
+### Option 2: Create a configuration file to define the ACLs
+
+This option meets my need in that I can have a specific user and password.
+
+First you have to create the file `redis.conf` with the following content:
+
+```bash
+masterauth password
+
+# @see: https://redis.io/docs/management/security/acl/
+## Totally disable anonymous access
+user default off
+# Adds user "development" with the password "mypassword" and give the access to namespaces "myproject:*"
+# `#89e01536ac207279409d4de1e5253e01f4a1769e696db0d6062ca9b8f56767c8` corresponds to the SHA-256 password for the user.
+user development on ~myproject:* &* +@all -@dangerous #89e01536ac207279409d4de1e5253e01f4a1769e696db0d6062ca9b8f56767c8
+```
+
+In your `docker-compose.yaml` file, you should configure it like that:
+
+```yaml
+version: '3.9'
+services:
+    redis:
+        image: redis:5-alpine
+        command: [ 'redis-server', '/redis.conf' ]
+        ports:
+            - "6379:6379"
+        volumes:
+            - /redis.conf:/redis.conf:rw
+```
+
+That's all 🎉.
+
+If you are a Symfony user, you can configure the DSN like the following:
+```bash
+# .env.local
+REDIS_URL=redis://development:mypassword@127.0.0.1:6379
+```
