@@ -2,6 +2,7 @@
 title: "Why I started contributing to opensource?"
 date: 2022-04-27T02:35:00+0200
 categories: [opensource]
+image: markus-spiske-8OyKWQgBsKQ-unsplash.jpg
 ---
 
 > Disclaimer: This post is a temporary post create during the initialisation of this blog.
