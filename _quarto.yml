@@ -12,14 +12,17 @@ website:
         pinned: true
         right:
             - about.qmd
-            -
-                icon: github
+            -   icon: github
                 href: https://github.com/fsoedjede
-            -
-                icon: twitter
+            -   icon: twitter
                 href: https://twitter.comfsoedjede
 
 format:
     html:
         theme: cosmo
         css: styles.css
+
+# freeze computational output
+# https://quarto.org/docs/publishing/github-pages.html#freezing-computations
+execute:
+    freeze: auto
