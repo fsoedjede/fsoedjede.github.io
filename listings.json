@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html",
+      "/posts/2022-04-27-using-weblate-without-linked-vcs-repository/index.html",
+      "/posts/2022-04-27-why-i-started-contributing-to-opensource/index.html"
+    ]
+  }
+]

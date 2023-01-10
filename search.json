@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/2022-04-27-using-weblate-without-linked-vcs-repository/index.html",
+    "href": "posts/2022-04-27-using-weblate-without-linked-vcs-repository/index.html",
+    "title": "Using Weblate without linked vcs repository",
+    "section": "",
+    "text": "Disclaimer: This post is a temporary post create during the initialisation of this blog. Do not expect the content to be fully relevant or complete.\n\nSome times ago, I started using Weblate to manage translations in some of my Symfony and Python projects.\nI’ve come across a little limitation explained in only one paragraph in the documentation.\n\nWhat I want to do\nI want to be able to create a new translation component without linking it to a VCS repository.\n\n\nIs that possible?\nYes it’s possible. I just forget how I did it the first time.\n\n\nHow to proceed?\n\n1. Weblate documentation\nIn the documentation, I found the following paragraph which answer my question:\n\n\n\nOption “Upload translations files” visible\n\n\nLink: https://docs.weblate.org/en/weblate-4.11.2/admin/projects.html#adding-translation-projects-and-components\n\n\n2. Other ways\nThere is two ways to create a new translation component without vcs repository.\nClick on Add new translation component and you will see these options:\n\n\n\nOptions to choose to create component without vcs repository\n\n\nChoose the one which matches the most your need."
+  },
+  {
+    "objectID": "posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html",
+    "href": "posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html",
+    "title": "Setting Redis user and password in Docker environnement",
+    "section": "",
+    "text": "For several years, locally, I used redis without needing to use a password to secure access.\nRecently, while migrating an application from a VM to Kubernetes, I ran into a problem with redis requiring a user and password.\nIn the VM, redis was configured without using a specific user but in the Kubernetes environment, it is required.\nThe redis cluster is shared by multiple applications; which requires access to namespaces to be secure.\nSo the question is: how to set up a secure redis user?"
+  },
+  {
+    "objectID": "posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html#approach-to-solution",
+    "href": "posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html#approach-to-solution",
+    "title": "Setting Redis user and password in Docker environnement",
+    "section": "Approach to solution",
+    "text": "Approach to solution\n\nNot being Devops, this solution can be totally trivial.\n\n\nOption 1: Use the --requirepass option\nExample:\nversion: '3.9'\nservices:\n    redis:\n        image: 'redis:5-alpine'\n        command: redis-server --requirepass mypassword\n        ports:\n            - '6379:6379'\nThis option is the one that I found the most, but it does not correspond to my need.\nIt does not allow to define a user and a password.\n\n\nOption 2: Create a configuration file to define the ACLs\nThis option meets my need in that I can have a specific user and password.\nFirst you have to create the file redis.conf with the following content:\nmasterauth password\n\n# @see: https://redis.io/docs/management/security/acl/\n## Totally disable anonymous access\nuser default off\n# Adds user \"development\" with the password \"mypassword\" and give the access to namespaces \"myproject:*\"\n# `#89e01536ac207279409d4de1e5253e01f4a1769e696db0d6062ca9b8f56767c8` corresponds to the SHA-256 password for the user.\nuser development on ~myproject:* &* +@all -@dangerous #89e01536ac207279409d4de1e5253e01f4a1769e696db0d6062ca9b8f56767c8\nIn your docker-compose.yaml file, you should configure it like that:\nversion: '3.9'\nservices:\n    redis:\n        image: redis:5-alpine\n        command: [ 'redis-server', '/redis.conf' ]\n        ports:\n            - \"6379:6379\"\n        volumes:\n            - /redis.conf:/redis.conf:rw\nThat’s all 🎉.\nIf you are a Symfony user, you can configure the DSN like the following:\n# .env.local\nREDIS_URL=redis://development:mypassword@127.0.0.1:6379"
+  },
+  {
+    "objectID": "posts/2022-04-27-why-i-started-contributing-to-opensource/index.html",
+    "href": "posts/2022-04-27-why-i-started-contributing-to-opensource/index.html",
+    "title": "Why I started contributing to opensource?",
+    "section": "",
+    "text": "Disclaimer: This post is a temporary post create during the initialisation of this blog. Do not expect the content to be fully relevant or complete.\n\nDuring my growth as from Junior Developer to Senior Developer and Lead Dev, I’ve come across some issues with the libraries I commonly use.\nBeing Junior Developer, I just dig into the library code to understand the bug and fix my code to make it work.\nGrowing to Intermediate then Senior Developer, I wanted to contribute to the projects I use to help them improve or add some features I’m missing. That’s how I started following the specific projects I use a lot like Symfony, EasyAdminBundle, etc.\nHere, I list those projects and my contribution to them. This list will be annually updated to help me follow my growth in contributing to opensource.\n\nOne thing I learned contributing to opensource projects is: “My time is precious. The projects maintainers time is precious. It’s easier to fix an issue when the context is clearly established and test case are provided.”"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Felix SOEDJEDE",
+    "section": "",
+    "text": "Setting Redis user and password in Docker environnement\n\n\n\n\n\n\n\ndocker\n\n\nredis\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2023\n\n\n\n\n\n\n  \n\n\n\n\nUsing Weblate without linked vcs repository\n\n\n\n\n\n\n\nlocalization\n\n\nweblate\n\n\n\n\n\n\n\n\n\n\n\nApr 27, 2022\n\n\n\n\n\n\n  \n\n\n\n\nWhy I started contributing to opensource?\n\n\n\n\n\n\n\nopensource\n\n\n\n\n\n\n\n\n\n\n\nApr 27, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I was thinking to start a place when I would just write things.\nHere I will write about:\n\nwhat I’ve learned doing my regular work\nwhat I’ve learned from others\nthings I stuck on to never again think a lot about them. I may also help others.\n\nThis place is also to improve:\n\nmy knowledge of what I’m writing by going deeper\nmy writing skills\nmy coding/architectural skills\netc.\n\nI’m here to improve everything that can be improved to be the best I can be in the IT field.\nFinally, it’s a place to:\n\ntake some note for myself for the future\n\nInteresting stuff I found while reading other blogs, things that can help in my work, etc.\n\neasily find my personal achievement\n\nI’m not the type of person who notes everything he did, etc. I’m just a doer. I link doing things and doing them well. Now I’m trying to be a writer also to improve more than just reading, to express my creativity.\n–\nPing me on Twitter or by mail for any feedback.\nRegards"
+  }
+]
