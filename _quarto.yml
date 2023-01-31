@@ -8,6 +8,7 @@ website:
         Blog of *Felix SOEDJEDE*, an IT Engineer passionate by `Entrepreneurship`,
         `Software Craftsmanship`, `Clean Code`, `Structured thoughts`, `PHP`, `Symfony`, `Python`, `Pandoc`, etc.
     #email: soefelix[at]gmail.com
+    google-analytics: 'G-MHY4PCDZTD'
     navbar:
         background: dark
         pinned: true
