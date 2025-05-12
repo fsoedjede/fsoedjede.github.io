@@ -1,0 +1,2340 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,800">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="schema_doc.css">
+    <script src="https://use.fontawesome.com/facf9fa52c.js"></script>
+    <script src="schema_doc.min.js"></script>
+    <meta charset="utf-8"/>
+        
+    
+    <title>JSON Schema for cover layout properties</title>
+</head>
+<body onload="anchorOnLoad();" id="root"><div class="text-right">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collapse:not(.show)" aria-expanded="false">Expand all</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collapse.show" aria-expanded="false">Collapse all</button>
+        </div>
+
+    <div class="breadcrumbs"></div> <h1>JSON Schema for cover layout properties</h1><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description">Properties used to generate a book cover.
+
+When an option is not relevant, leave if empty.</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionwhole-background-color">
+    <div class="card">
+        <div class="card-header" id="headingwhole-background-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#whole-background-color"
+                        aria-expanded="" aria-controls="whole-background-color" onclick="setAnchor('#whole-background-color')"><span class="property-name">whole-background-color</span></button>
+            </h2>
+        </div>
+
+        <div id="whole-background-color"
+             class="collapse property-definition-div" aria-labelledby="headingwhole-background-color"
+             data-parent="#accordionwhole-background-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#whole-background-color" onclick="anchorLink('whole-background-color')">whole-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+<span class="description">Background color for the entire cover as a hex color code</span><span class="pattern-value" id="whole-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionwhole-background-image">
+    <div class="card">
+        <div class="card-header" id="headingwhole-background-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#whole-background-image"
+                        aria-expanded="" aria-controls="whole-background-image" onclick="setAnchor('#whole-background-image')"><span class="property-name">whole-background-image</span></button>
+            </h2>
+        </div>
+
+        <div id="whole-background-image"
+             class="collapse property-definition-div" aria-labelledby="headingwhole-background-image"
+             data-parent="#accordionwhole-background-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#whole-background-image" onclick="anchorLink('whole-background-image')">whole-background-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Path to an image file to use as background for the entire cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback">
+    <div class="card">
+        <div class="card-header" id="headingback">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back"
+                        aria-expanded="" aria-controls="back" onclick="setAnchor('#back')"><span class="property-name">back</span></button>
+            </h2>
+        </div>
+
+        <div id="back"
+             class="collapse property-definition-div" aria-labelledby="headingback"
+             data-parent="#accordionback">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back" onclick="anchorLink('back')">back</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "****************************************"</span><br/>
+<span class="description">Marker for the back cover section, typically used for documentation or section separation</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-background-color">
+    <div class="card">
+        <div class="card-header" id="headingback-background-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-background-color"
+                        aria-expanded="" aria-controls="back-background-color" onclick="setAnchor('#back-background-color')"><span class="property-name">back-background-color</span></button>
+            </h2>
+        </div>
+
+        <div id="back-background-color"
+             class="collapse property-definition-div" aria-labelledby="headingback-background-color"
+             data-parent="#accordionback-background-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-background-color" onclick="anchorLink('back-background-color')">back-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+<span class="description">Background color for the back cover as a hex color code</span><span class="pattern-value" id="back-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-background-color-gradient-top">
+    <div class="card">
+        <div class="card-header" id="headingback-background-color-gradient-top">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-background-color-gradient-top"
+                        aria-expanded="" aria-controls="back-background-color-gradient-top" onclick="setAnchor('#back-background-color-gradient-top')"><span class="property-name">back-background-color-gradient-top</span></button>
+            </h2>
+        </div>
+
+        <div id="back-background-color-gradient-top"
+             class="collapse property-definition-div" aria-labelledby="headingback-background-color-gradient-top"
+             data-parent="#accordionback-background-color-gradient-top">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-background-color-gradient-top" onclick="anchorLink('back-background-color-gradient-top')">back-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Top color for gradient background on the back cover as a hex color code</span><span class="pattern-value" id="back-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-background-color-gradient-bottom">
+    <div class="card">
+        <div class="card-header" id="headingback-background-color-gradient-bottom">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-background-color-gradient-bottom"
+                        aria-expanded="" aria-controls="back-background-color-gradient-bottom" onclick="setAnchor('#back-background-color-gradient-bottom')"><span class="property-name">back-background-color-gradient-bottom</span></button>
+            </h2>
+        </div>
+
+        <div id="back-background-color-gradient-bottom"
+             class="collapse property-definition-div" aria-labelledby="headingback-background-color-gradient-bottom"
+             data-parent="#accordionback-background-color-gradient-bottom">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-background-color-gradient-bottom" onclick="anchorLink('back-background-color-gradient-bottom')">back-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Bottom color for gradient background on the back cover as a hex color code</span><span class="pattern-value" id="back-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-background-image">
+    <div class="card">
+        <div class="card-header" id="headingback-background-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-background-image"
+                        aria-expanded="" aria-controls="back-background-image" onclick="setAnchor('#back-background-image')"><span class="property-name">back-background-image</span></button>
+            </h2>
+        </div>
+
+        <div id="back-background-image"
+             class="collapse property-definition-div" aria-labelledby="headingback-background-image"
+             data-parent="#accordionback-background-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-background-image" onclick="anchorLink('back-background-image')">back-background-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Path to an image file to use as background for the back cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-margin-box-background-color">
+    <div class="card">
+        <div class="card-header" id="headingback-margin-box-background-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-margin-box-background-color"
+                        aria-expanded="" aria-controls="back-margin-box-background-color" onclick="setAnchor('#back-margin-box-background-color')"><span class="property-name">back-margin-box-background-color</span></button>
+            </h2>
+        </div>
+
+        <div id="back-margin-box-background-color"
+             class="collapse property-definition-div" aria-labelledby="headingback-margin-box-background-color"
+             data-parent="#accordionback-margin-box-background-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-margin-box-background-color" onclick="anchorLink('back-margin-box-background-color')">back-margin-box-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#7EA117"</span><br/>
+<span class="description">Background color for the margin box on the back cover as a hex color code</span><span class="pattern-value" id="back-margin-box-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-margin-box-background-color-gradient-top">
+    <div class="card">
+        <div class="card-header" id="headingback-margin-box-background-color-gradient-top">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-margin-box-background-color-gradient-top"
+                        aria-expanded="" aria-controls="back-margin-box-background-color-gradient-top" onclick="setAnchor('#back-margin-box-background-color-gradient-top')"><span class="property-name">back-margin-box-background-color-gradient-top</span></button>
+            </h2>
+        </div>
+
+        <div id="back-margin-box-background-color-gradient-top"
+             class="collapse property-definition-div" aria-labelledby="headingback-margin-box-background-color-gradient-top"
+             data-parent="#accordionback-margin-box-background-color-gradient-top">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-margin-box-background-color-gradient-top" onclick="anchorLink('back-margin-box-background-color-gradient-top')">back-margin-box-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Top color for gradient background on back cover margin box as a hex color code</span><span class="pattern-value" id="back-margin-box-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-margin-box-background-color-gradient-bottom">
+    <div class="card">
+        <div class="card-header" id="headingback-margin-box-background-color-gradient-bottom">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-margin-box-background-color-gradient-bottom"
+                        aria-expanded="" aria-controls="back-margin-box-background-color-gradient-bottom" onclick="setAnchor('#back-margin-box-background-color-gradient-bottom')"><span class="property-name">back-margin-box-background-color-gradient-bottom</span></button>
+            </h2>
+        </div>
+
+        <div id="back-margin-box-background-color-gradient-bottom"
+             class="collapse property-definition-div" aria-labelledby="headingback-margin-box-background-color-gradient-bottom"
+             data-parent="#accordionback-margin-box-background-color-gradient-bottom">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-margin-box-background-color-gradient-bottom" onclick="anchorLink('back-margin-box-background-color-gradient-bottom')">back-margin-box-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Bottom color for gradient background on back cover margin box as a hex color code</span><span class="pattern-value" id="back-margin-box-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-margin-box-background-image">
+    <div class="card">
+        <div class="card-header" id="headingback-margin-box-background-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-margin-box-background-image"
+                        aria-expanded="" aria-controls="back-margin-box-background-image" onclick="setAnchor('#back-margin-box-background-image')"><span class="property-name">back-margin-box-background-image</span></button>
+            </h2>
+        </div>
+
+        <div id="back-margin-box-background-image"
+             class="collapse property-definition-div" aria-labelledby="headingback-margin-box-background-image"
+             data-parent="#accordionback-margin-box-background-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-margin-box-background-image" onclick="anchorLink('back-margin-box-background-image')">back-margin-box-background-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Path to an image file to use as background for back cover margin box</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-text-color">
+    <div class="card">
+        <div class="card-header" id="headingback-title-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-text-color"
+                        aria-expanded="" aria-controls="back-title-text-color" onclick="setAnchor('#back-title-text-color')"><span class="property-name">back-title-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-text-color"
+             data-parent="#accordionback-title-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-text-color" onclick="anchorLink('back-title-text-color')">back-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
+<span class="description">Text color for the title on the back cover as a hex color code</span><span class="pattern-value" id="back-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-text-format">
+    <div class="card">
+        <div class="card-header" id="headingback-title-text-format">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-text-format"
+                        aria-expanded="" aria-controls="back-title-text-format" onclick="setAnchor('#back-title-text-format')"><span class="property-name">back-title-text-format</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-text-format"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-text-format"
+             data-parent="#accordionback-title-text-format">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-text-format" onclick="anchorLink('back-title-text-format')">back-title-text-format</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Bold-Italic"</span><br/>
+<span class="description">Font formatting for the title on the back cover</span>
+
+    <div class="enum-value" id="back-title-text-format_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"Bold"</li><li class="list-group-item enum-item">"Italic"</li><li class="list-group-item enum-item">"Bold-Italic"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-text-case">
+    <div class="card">
+        <div class="card-header" id="headingback-title-text-case">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-text-case"
+                        aria-expanded="" aria-controls="back-title-text-case" onclick="setAnchor('#back-title-text-case')"><span class="property-name">back-title-text-case</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-text-case"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-text-case"
+             data-parent="#accordionback-title-text-case">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-text-case" onclick="anchorLink('back-title-text-case')">back-title-text-case</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "None"</span><br/>
+<span class="description">Text case transformation for the title on the back cover</span>
+
+    <div class="enum-value" id="back-title-text-case_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"TitleCase"</li><li class="list-group-item enum-item">"SmallCaps"</li><li class="list-group-item enum-item">"UpperCase"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-font-size">
+    <div class="card">
+        <div class="card-header" id="headingback-title-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-font-size"
+                        aria-expanded="" aria-controls="back-title-font-size" onclick="setAnchor('#back-title-font-size')"><span class="property-name">back-title-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-font-size"
+             data-parent="#accordionback-title-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-font-size" onclick="anchorLink('back-title-font-size')">back-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "18pt"</span><br/>
+<span class="description">Font size for the title on the back cover with unit (e.g., 18pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-font-family">
+    <div class="card">
+        <div class="card-header" id="headingback-title-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-font-family"
+                        aria-expanded="" aria-controls="back-title-font-family" onclick="setAnchor('#back-title-font-family')"><span class="property-name">back-title-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-font-family"
+             data-parent="#accordionback-title-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-font-family" onclick="anchorLink('back-title-font-family')">back-title-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the title on the back cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-inline">
+    <div class="card">
+        <div class="card-header" id="headingback-title-inline">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-inline"
+                        aria-expanded="" aria-controls="back-title-inline" onclick="setAnchor('#back-title-inline')"><span class="property-name">back-title-inline</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-inline"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-inline"
+             data-parent="#accordionback-title-inline">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-inline" onclick="anchorLink('back-title-inline')">back-title-inline</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+<span class="description">Whether to display the back title inline with other content</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-content-text-color">
+    <div class="card">
+        <div class="card-header" id="headingback-content-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-content-text-color"
+                        aria-expanded="" aria-controls="back-content-text-color" onclick="setAnchor('#back-content-text-color')"><span class="property-name">back-content-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="back-content-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingback-content-text-color"
+             data-parent="#accordionback-content-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-content-text-color" onclick="anchorLink('back-content-text-color')">back-content-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#000000"</span><br/>
+<span class="description">Text color for the content on the back cover as a hex color code</span><span class="pattern-value" id="back-content-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-content-font-size">
+    <div class="card">
+        <div class="card-header" id="headingback-content-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-content-font-size"
+                        aria-expanded="" aria-controls="back-content-font-size" onclick="setAnchor('#back-content-font-size')"><span class="property-name">back-content-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="back-content-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingback-content-font-size"
+             data-parent="#accordionback-content-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-content-font-size" onclick="anchorLink('back-content-font-size')">back-content-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "12pt"</span><br/>
+<span class="description">Font size for the content on the back cover with unit (e.g., 12pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-content-font-family">
+    <div class="card">
+        <div class="card-header" id="headingback-content-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-content-font-family"
+                        aria-expanded="" aria-controls="back-content-font-family" onclick="setAnchor('#back-content-font-family')"><span class="property-name">back-content-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="back-content-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingback-content-font-family"
+             data-parent="#accordionback-content-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-content-font-family" onclick="anchorLink('back-content-font-family')">back-content-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the content on the back cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-image">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-image"
+                        aria-expanded="" aria-controls="back-thumbnail-image" onclick="setAnchor('#back-thumbnail-image')"><span class="property-name">back-thumbnail-image</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-image"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-image"
+             data-parent="#accordionback-thumbnail-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-image" onclick="anchorLink('back-thumbnail-image')">back-thumbnail-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "front-background.png"</span><br/>
+<span class="description">Path to an image file to use as thumbnail on the back cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip" onclick="setAnchor('#back-thumbnail-top-line-skip')"><span class="property-name">back-thumbnail-top-line-skip</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip"
+             data-parent="#accordionback-thumbnail-top-line-skip">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip" onclick="anchorLink('back-thumbnail-top-line-skip')">back-thumbnail-top-line-skip</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description">Number of lines to skip before placing the thumbnail on the back cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-background-color">
+    <div class="card">
+        <div class="card-header" id="headingspine-background-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-background-color"
+                        aria-expanded="" aria-controls="spine-background-color" onclick="setAnchor('#spine-background-color')"><span class="property-name">spine-background-color</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-background-color"
+             class="collapse property-definition-div" aria-labelledby="headingspine-background-color"
+             data-parent="#accordionspine-background-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-background-color" onclick="anchorLink('spine-background-color')">spine-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
+<span class="description">Background color for the spine as a hex color code</span><span class="pattern-value" id="spine-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-background-color-gradient-top">
+    <div class="card">
+        <div class="card-header" id="headingspine-background-color-gradient-top">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-background-color-gradient-top"
+                        aria-expanded="" aria-controls="spine-background-color-gradient-top" onclick="setAnchor('#spine-background-color-gradient-top')"><span class="property-name">spine-background-color-gradient-top</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-background-color-gradient-top"
+             class="collapse property-definition-div" aria-labelledby="headingspine-background-color-gradient-top"
+             data-parent="#accordionspine-background-color-gradient-top">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-background-color-gradient-top" onclick="anchorLink('spine-background-color-gradient-top')">spine-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Top color for gradient background on the spine as a hex color code</span><span class="pattern-value" id="spine-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-background-color-gradient-bottom">
+    <div class="card">
+        <div class="card-header" id="headingspine-background-color-gradient-bottom">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-background-color-gradient-bottom"
+                        aria-expanded="" aria-controls="spine-background-color-gradient-bottom" onclick="setAnchor('#spine-background-color-gradient-bottom')"><span class="property-name">spine-background-color-gradient-bottom</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-background-color-gradient-bottom"
+             class="collapse property-definition-div" aria-labelledby="headingspine-background-color-gradient-bottom"
+             data-parent="#accordionspine-background-color-gradient-bottom">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-background-color-gradient-bottom" onclick="anchorLink('spine-background-color-gradient-bottom')">spine-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Bottom color for gradient background on the spine as a hex color code</span><span class="pattern-value" id="spine-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-background-image">
+    <div class="card">
+        <div class="card-header" id="headingspine-background-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-background-image"
+                        aria-expanded="" aria-controls="spine-background-image" onclick="setAnchor('#spine-background-image')"><span class="property-name">spine-background-image</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-background-image"
+             class="collapse property-definition-div" aria-labelledby="headingspine-background-image"
+             data-parent="#accordionspine-background-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-background-image" onclick="anchorLink('spine-background-image')">spine-background-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Path to an image file to use as background for the spine</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-author-text-color">
+    <div class="card">
+        <div class="card-header" id="headingspine-author-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-author-text-color"
+                        aria-expanded="" aria-controls="spine-author-text-color" onclick="setAnchor('#spine-author-text-color')"><span class="property-name">spine-author-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-author-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingspine-author-text-color"
+             data-parent="#accordionspine-author-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-author-text-color" onclick="anchorLink('spine-author-text-color')">spine-author-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+<span class="description">Text color for the author name on the spine as a hex color code</span><span class="pattern-value" id="spine-author-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-author-text-format">
+    <div class="card">
+        <div class="card-header" id="headingspine-author-text-format">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-author-text-format"
+                        aria-expanded="" aria-controls="spine-author-text-format" onclick="setAnchor('#spine-author-text-format')"><span class="property-name">spine-author-text-format</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-author-text-format"
+             class="collapse property-definition-div" aria-labelledby="headingspine-author-text-format"
+             data-parent="#accordionspine-author-text-format">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-author-text-format" onclick="anchorLink('spine-author-text-format')">spine-author-text-format</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Bold-Italic"</span><br/>
+<span class="description">Font formatting for the author name on the spine</span>
+
+    <div class="enum-value" id="back-title-text-format_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"Bold"</li><li class="list-group-item enum-item">"Italic"</li><li class="list-group-item enum-item">"Bold-Italic"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-author-text-case">
+    <div class="card">
+        <div class="card-header" id="headingspine-author-text-case">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-author-text-case"
+                        aria-expanded="" aria-controls="spine-author-text-case" onclick="setAnchor('#spine-author-text-case')"><span class="property-name">spine-author-text-case</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-author-text-case"
+             class="collapse property-definition-div" aria-labelledby="headingspine-author-text-case"
+             data-parent="#accordionspine-author-text-case">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-author-text-case" onclick="anchorLink('spine-author-text-case')">spine-author-text-case</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "None"</span><br/>
+<span class="description">Text case transformation for the author name on the spine</span>
+
+    <div class="enum-value" id="back-title-text-case_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"TitleCase"</li><li class="list-group-item enum-item">"SmallCaps"</li><li class="list-group-item enum-item">"UpperCase"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-author-font-size">
+    <div class="card">
+        <div class="card-header" id="headingspine-author-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-author-font-size"
+                        aria-expanded="" aria-controls="spine-author-font-size" onclick="setAnchor('#spine-author-font-size')"><span class="property-name">spine-author-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-author-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingspine-author-font-size"
+             data-parent="#accordionspine-author-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-author-font-size" onclick="anchorLink('spine-author-font-size')">spine-author-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "16pt"</span><br/>
+<span class="description">Font size for the author name on the spine with unit (e.g., 16pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-author-font-family">
+    <div class="card">
+        <div class="card-header" id="headingspine-author-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-author-font-family"
+                        aria-expanded="" aria-controls="spine-author-font-family" onclick="setAnchor('#spine-author-font-family')"><span class="property-name">spine-author-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-author-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingspine-author-font-family"
+             data-parent="#accordionspine-author-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-author-font-family" onclick="anchorLink('spine-author-font-family')">spine-author-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the author name on the spine</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-text-color">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-text-color"
+                        aria-expanded="" aria-controls="spine-title-text-color" onclick="setAnchor('#spine-title-text-color')"><span class="property-name">spine-title-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-text-color"
+             data-parent="#accordionspine-title-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-text-color" onclick="anchorLink('spine-title-text-color')">spine-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+<span class="description">Text color for the title on the spine as a hex color code</span><span class="pattern-value" id="spine-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-text-format">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-text-format">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-text-format"
+                        aria-expanded="" aria-controls="spine-title-text-format" onclick="setAnchor('#spine-title-text-format')"><span class="property-name">spine-title-text-format</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-text-format"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-text-format"
+             data-parent="#accordionspine-title-text-format">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-text-format" onclick="anchorLink('spine-title-text-format')">spine-title-text-format</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Bold-Italic"</span><br/>
+<span class="description">Font formatting for the title on the spine</span>
+
+    <div class="enum-value" id="back-title-text-format_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"Bold"</li><li class="list-group-item enum-item">"Italic"</li><li class="list-group-item enum-item">"Bold-Italic"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-text-case">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-text-case">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-text-case"
+                        aria-expanded="" aria-controls="spine-title-text-case" onclick="setAnchor('#spine-title-text-case')"><span class="property-name">spine-title-text-case</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-text-case"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-text-case"
+             data-parent="#accordionspine-title-text-case">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-text-case" onclick="anchorLink('spine-title-text-case')">spine-title-text-case</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "None"</span><br/>
+<span class="description">Text case transformation for the title on the spine</span>
+
+    <div class="enum-value" id="back-title-text-case_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"TitleCase"</li><li class="list-group-item enum-item">"SmallCaps"</li><li class="list-group-item enum-item">"UpperCase"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-font-size">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-font-size"
+                        aria-expanded="" aria-controls="spine-title-font-size" onclick="setAnchor('#spine-title-font-size')"><span class="property-name">spine-title-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-font-size"
+             data-parent="#accordionspine-title-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-font-size" onclick="anchorLink('spine-title-font-size')">spine-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "18pt"</span><br/>
+<span class="description">Font size for the title on the spine with unit (e.g., 18pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-font-family">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-font-family"
+                        aria-expanded="" aria-controls="spine-title-font-family" onclick="setAnchor('#spine-title-font-family')"><span class="property-name">spine-title-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-font-family"
+             data-parent="#accordionspine-title-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-font-family" onclick="anchorLink('spine-title-font-family')">spine-title-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the title on the spine</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-background-color">
+    <div class="card">
+        <div class="card-header" id="headingfront-background-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-background-color"
+                        aria-expanded="" aria-controls="front-background-color" onclick="setAnchor('#front-background-color')"><span class="property-name">front-background-color</span></button>
+            </h2>
+        </div>
+
+        <div id="front-background-color"
+             class="collapse property-definition-div" aria-labelledby="headingfront-background-color"
+             data-parent="#accordionfront-background-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-background-color" onclick="anchorLink('front-background-color')">front-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+<span class="description">Background color for the front cover as a hex color code</span><span class="pattern-value" id="front-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-background-color-gradient-top">
+    <div class="card">
+        <div class="card-header" id="headingfront-background-color-gradient-top">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-background-color-gradient-top"
+                        aria-expanded="" aria-controls="front-background-color-gradient-top" onclick="setAnchor('#front-background-color-gradient-top')"><span class="property-name">front-background-color-gradient-top</span></button>
+            </h2>
+        </div>
+
+        <div id="front-background-color-gradient-top"
+             class="collapse property-definition-div" aria-labelledby="headingfront-background-color-gradient-top"
+             data-parent="#accordionfront-background-color-gradient-top">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-background-color-gradient-top" onclick="anchorLink('front-background-color-gradient-top')">front-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Top color for gradient background on the front cover as a hex color code</span><span class="pattern-value" id="front-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-background-color-gradient-bottom">
+    <div class="card">
+        <div class="card-header" id="headingfront-background-color-gradient-bottom">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-background-color-gradient-bottom"
+                        aria-expanded="" aria-controls="front-background-color-gradient-bottom" onclick="setAnchor('#front-background-color-gradient-bottom')"><span class="property-name">front-background-color-gradient-bottom</span></button>
+            </h2>
+        </div>
+
+        <div id="front-background-color-gradient-bottom"
+             class="collapse property-definition-div" aria-labelledby="headingfront-background-color-gradient-bottom"
+             data-parent="#accordionfront-background-color-gradient-bottom">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-background-color-gradient-bottom" onclick="anchorLink('front-background-color-gradient-bottom')">front-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+<span class="description">Bottom color for gradient background on the front cover as a hex color code</span><span class="pattern-value" id="front-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-background-image">
+    <div class="card">
+        <div class="card-header" id="headingfront-background-image">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-background-image"
+                        aria-expanded="" aria-controls="front-background-image" onclick="setAnchor('#front-background-image')"><span class="property-name">front-background-image</span></button>
+            </h2>
+        </div>
+
+        <div id="front-background-image"
+             class="collapse property-definition-div" aria-labelledby="headingfront-background-image"
+             data-parent="#accordionfront-background-image">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-background-image" onclick="anchorLink('front-background-image')">front-background-image</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "front-background.png"</span><br/>
+<span class="description">Path to an image file to use as background for the front cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-text-color">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-text-color"
+                        aria-expanded="" aria-controls="front-author-text-color" onclick="setAnchor('#front-author-text-color')"><span class="property-name">front-author-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-text-color"
+             data-parent="#accordionfront-author-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-text-color" onclick="anchorLink('front-author-text-color')">front-author-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#000000"</span><br/>
+<span class="description">Text color for the author name on the front cover as a hex color code</span><span class="pattern-value" id="front-author-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-text-format">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-text-format">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-text-format"
+                        aria-expanded="" aria-controls="front-author-text-format" onclick="setAnchor('#front-author-text-format')"><span class="property-name">front-author-text-format</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-text-format"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-text-format"
+             data-parent="#accordionfront-author-text-format">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-text-format" onclick="anchorLink('front-author-text-format')">front-author-text-format</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Bold-Italic"</span><br/>
+<span class="description">Font formatting for the author name on the front cover</span>
+
+    <div class="enum-value" id="back-title-text-format_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"Bold"</li><li class="list-group-item enum-item">"Italic"</li><li class="list-group-item enum-item">"Bold-Italic"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-text-case">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-text-case">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-text-case"
+                        aria-expanded="" aria-controls="front-author-text-case" onclick="setAnchor('#front-author-text-case')"><span class="property-name">front-author-text-case</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-text-case"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-text-case"
+             data-parent="#accordionfront-author-text-case">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-text-case" onclick="anchorLink('front-author-text-case')">front-author-text-case</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "None"</span><br/>
+<span class="description">Text case transformation for the author name on the front cover</span>
+
+    <div class="enum-value" id="back-title-text-case_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"TitleCase"</li><li class="list-group-item enum-item">"SmallCaps"</li><li class="list-group-item enum-item">"UpperCase"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-font-size">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-font-size"
+                        aria-expanded="" aria-controls="front-author-font-size" onclick="setAnchor('#front-author-font-size')"><span class="property-name">front-author-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-font-size"
+             data-parent="#accordionfront-author-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-font-size" onclick="anchorLink('front-author-font-size')">front-author-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "24pt"</span><br/>
+<span class="description">Font size for the author name on the front cover with unit (e.g., 24pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-font-family">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-font-family"
+                        aria-expanded="" aria-controls="front-author-font-family" onclick="setAnchor('#front-author-font-family')"><span class="property-name">front-author-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-font-family"
+             data-parent="#accordionfront-author-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-font-family" onclick="anchorLink('front-author-font-family')">front-author-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the author name on the front cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-section">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-section">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-section"
+                        aria-expanded="" aria-controls="front-author-section" onclick="setAnchor('#front-author-section')"><span class="property-name">front-author-section</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-section"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-section"
+             data-parent="#accordionfront-author-section">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section" onclick="anchorLink('front-author-section')">front-author-section</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description">Positioning and alignment settings for the author name on the front cover</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionfront-author-section_name">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-section_name">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-section_name"
+                        aria-expanded="" aria-controls="front-author-section_name" onclick="setAnchor('#front-author-section_name')"><span class="property-name">name</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-section_name"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-section_name"
+             data-parent="#accordionfront-author-section_name">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section" onclick="anchorLink('front-author-section')">front-author-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section_name" onclick="anchorLink('front-author-section_name')">name</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "upper"</span><br/>
+<span class="description">Section name where author text will be placed</span>
+
+    <div class="enum-value" id="front-author-section_name_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"upper"</li><li class="list-group-item enum-item">"middle"</li><li class="list-group-item enum-item">"lower"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-section_valign">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-section_valign">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-section_valign"
+                        aria-expanded="" aria-controls="front-author-section_valign" onclick="setAnchor('#front-author-section_valign')"><span class="property-name">valign</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-section_valign"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-section_valign"
+             data-parent="#accordionfront-author-section_valign">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section" onclick="anchorLink('front-author-section')">front-author-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section_valign" onclick="anchorLink('front-author-section_valign')">valign</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "top"</span><br/>
+<span class="description">Vertical alignment of author text within its section</span>
+
+    <div class="enum-value" id="front-author-section_valign_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"top"</li><li class="list-group-item enum-item">"center"</li><li class="list-group-item enum-item">"bottom"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-author-section_halign">
+    <div class="card">
+        <div class="card-header" id="headingfront-author-section_halign">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-author-section_halign"
+                        aria-expanded="" aria-controls="front-author-section_halign" onclick="setAnchor('#front-author-section_halign')"><span class="property-name">halign</span></button>
+            </h2>
+        </div>
+
+        <div id="front-author-section_halign"
+             class="collapse property-definition-div" aria-labelledby="headingfront-author-section_halign"
+             data-parent="#accordionfront-author-section_halign">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section" onclick="anchorLink('front-author-section')">front-author-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-author-section_halign" onclick="anchorLink('front-author-section_halign')">halign</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "center"</span><br/>
+<span class="description">Horizontal alignment of author text within its section</span>
+
+    <div class="enum-value" id="front-author-section_halign_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"left"</li><li class="list-group-item enum-item">"center"</li><li class="list-group-item enum-item">"right"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-text-color">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-text-color">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-text-color"
+                        aria-expanded="" aria-controls="front-title-text-color" onclick="setAnchor('#front-title-text-color')"><span class="property-name">front-title-text-color</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-text-color"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-text-color"
+             data-parent="#accordionfront-title-text-color">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-text-color" onclick="anchorLink('front-title-text-color')">front-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
+<span class="description">Text color for the title on the front cover as a hex color code</span><span class="pattern-value" id="front-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-text-format">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-text-format">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-text-format"
+                        aria-expanded="" aria-controls="front-title-text-format" onclick="setAnchor('#front-title-text-format')"><span class="property-name">front-title-text-format</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-text-format"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-text-format"
+             data-parent="#accordionfront-title-text-format">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-text-format" onclick="anchorLink('front-title-text-format')">front-title-text-format</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Bold-Italic"</span><br/>
+<span class="description">Font formatting for the title on the front cover</span>
+
+    <div class="enum-value" id="back-title-text-format_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"Bold"</li><li class="list-group-item enum-item">"Italic"</li><li class="list-group-item enum-item">"Bold-Italic"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-text-case">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-text-case">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-text-case"
+                        aria-expanded="" aria-controls="front-title-text-case" onclick="setAnchor('#front-title-text-case')"><span class="property-name">front-title-text-case</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-text-case"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-text-case"
+             data-parent="#accordionfront-title-text-case">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-text-case" onclick="anchorLink('front-title-text-case')">front-title-text-case</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "None"</span><br/>
+<span class="description">Text case transformation for the title on the front cover</span>
+
+    <div class="enum-value" id="back-title-text-case_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"None"</li><li class="list-group-item enum-item">"TitleCase"</li><li class="list-group-item enum-item">"SmallCaps"</li><li class="list-group-item enum-item">"UpperCase"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-font-size">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-font-size">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-font-size"
+                        aria-expanded="" aria-controls="front-title-font-size" onclick="setAnchor('#front-title-font-size')"><span class="property-name">front-title-font-size</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-font-size"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-font-size"
+             data-parent="#accordionfront-title-font-size">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-font-size" onclick="anchorLink('front-title-font-size')">front-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "60pt"</span><br/>
+<span class="description">Font size for the title on the front cover with unit (e.g., 60pt)</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-font-family">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-font-family">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-font-family"
+                        aria-expanded="" aria-controls="front-title-font-family" onclick="setAnchor('#front-title-font-family')"><span class="property-name">front-title-font-family</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-font-family"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-font-family"
+             data-parent="#accordionfront-title-font-family">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-font-family" onclick="anchorLink('front-title-font-family')">front-title-font-family</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "Myriad Pro"</span><br/>
+<span class="description">Font family name for the title on the front cover</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-section">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-section">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-section"
+                        aria-expanded="" aria-controls="front-title-section" onclick="setAnchor('#front-title-section')"><span class="property-name">front-title-section</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-section"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-section"
+             data-parent="#accordionfront-title-section">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section" onclick="anchorLink('front-title-section')">front-title-section</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description">Positioning and alignment settings for the title on the front cover</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionfront-title-section_name">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-section_name">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-section_name"
+                        aria-expanded="" aria-controls="front-title-section_name" onclick="setAnchor('#front-title-section_name')"><span class="property-name">name</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-section_name"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-section_name"
+             data-parent="#accordionfront-title-section_name">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section" onclick="anchorLink('front-title-section')">front-title-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section_name" onclick="anchorLink('front-title-section_name')">name</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "middle"</span><br/>
+<span class="description">Section name where title text will be placed</span>
+
+    <div class="enum-value" id="front-author-section_name_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"upper"</li><li class="list-group-item enum-item">"middle"</li><li class="list-group-item enum-item">"lower"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-section_valign">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-section_valign">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-section_valign"
+                        aria-expanded="" aria-controls="front-title-section_valign" onclick="setAnchor('#front-title-section_valign')"><span class="property-name">valign</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-section_valign"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-section_valign"
+             data-parent="#accordionfront-title-section_valign">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section" onclick="anchorLink('front-title-section')">front-title-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section_valign" onclick="anchorLink('front-title-section_valign')">valign</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "bottom"</span><br/>
+<span class="description">Vertical alignment of title text within its section</span>
+
+    <div class="enum-value" id="front-author-section_valign_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"top"</li><li class="list-group-item enum-item">"center"</li><li class="list-group-item enum-item">"bottom"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfront-title-section_halign">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-section_halign">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-section_halign"
+                        aria-expanded="" aria-controls="front-title-section_halign" onclick="setAnchor('#front-title-section_halign')"><span class="property-name">halign</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-section_halign"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-section_halign"
+             data-parent="#accordionfront-title-section_halign">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section" onclick="anchorLink('front-title-section')">front-title-section</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-section_halign" onclick="anchorLink('front-title-section_halign')">halign</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "center"</span><br/>
+<span class="description">Horizontal alignment of title text within its section</span>
+
+    <div class="enum-value" id="front-author-section_halign_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"left"</li><li class="list-group-item enum-item">"center"</li><li class="list-group-item enum-item">"right"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfontfamilies">
+    <div class="card">
+        <div class="card-header" id="headingfontfamilies">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#fontfamilies"
+                        aria-expanded="" aria-controls="fontfamilies" onclick="setAnchor('#fontfamilies')"><span class="property-name">fontfamilies</span></button>
+            </h2>
+        </div>
+
+        <div id="fontfamilies"
+             class="collapse property-definition-div" aria-labelledby="headingfontfamilies"
+             data-parent="#accordionfontfamilies">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a></div><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description">List of font families with their configuration options</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="fontfamilies_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items" onclick="anchorLink('fontfamilies_items')">fontfamilies items</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+
+        
+
+        
+        
+
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><button class="btn btn-light example-show collapsed" data-toggle="collapse" data-target="#fontfamilies_items_ex1" aria-controls="fontfamilies_items_ex1"></button><div id="fontfamilies_items_ex1" class="collapse jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;\\GillSans&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;font&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Gill Sans&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;options&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;UprightFont=GillSans-Regular.otf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;BoldFont=GillSans-Bold.otf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ItalicFont=GillSans-Italic.otf&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div><button class="btn btn-light example-show collapsed" data-toggle="collapse" data-target="#fontfamilies_items_ex2" aria-controls="fontfamilies_items_ex2"></button><div id="fontfamilies_items_ex2" class="collapse jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;\\FrutigerLTStd&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;font&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Frutiger LT Std&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;options&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;UprightFont=FrutigerLTStd-Roman.otf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;BoldFont=FrutigerLTStd-Bold.otf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ItalicFont=FrutigerLTStd-Italic.otf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;BoldItalicFont=FrutigerLTStd-BoldItalic.otf&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="accordion" id="accordionfontfamilies_items_name">
+    <div class="card">
+        <div class="card-header" id="headingfontfamilies_items_name">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#fontfamilies_items_name"
+                        aria-expanded="" aria-controls="fontfamilies_items_name" onclick="setAnchor('#fontfamilies_items_name')"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="fontfamilies_items_name"
+             class="collapse property-definition-div" aria-labelledby="headingfontfamilies_items_name"
+             data-parent="#accordionfontfamilies_items_name">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items" onclick="anchorLink('fontfamilies_items')">fontfamilies items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items_name" onclick="anchorLink('fontfamilies_items_name')">name</a></div><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description">Internal name or command for the font family, often with escape characters</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfontfamilies_items_font">
+    <div class="card">
+        <div class="card-header" id="headingfontfamilies_items_font">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#fontfamilies_items_font"
+                        aria-expanded="" aria-controls="fontfamilies_items_font" onclick="setAnchor('#fontfamilies_items_font')"><span class="property-name">font</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="fontfamilies_items_font"
+             class="collapse property-definition-div" aria-labelledby="headingfontfamilies_items_font"
+             data-parent="#accordionfontfamilies_items_font">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items" onclick="anchorLink('fontfamilies_items')">fontfamilies items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items_font" onclick="anchorLink('fontfamilies_items_font')">font</a></div><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description">Display name of the font family</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionfontfamilies_items_options">
+    <div class="card">
+        <div class="card-header" id="headingfontfamilies_items_options">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#fontfamilies_items_options"
+                        aria-expanded="" aria-controls="fontfamilies_items_options" onclick="setAnchor('#fontfamilies_items_options')"><span class="property-name">options</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="fontfamilies_items_options"
+             class="collapse property-definition-div" aria-labelledby="headingfontfamilies_items_options"
+             data-parent="#accordionfontfamilies_items_options">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items" onclick="anchorLink('fontfamilies_items')">fontfamilies items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items_options" onclick="anchorLink('fontfamilies_items_options')">options</a></div><span class="badge badge-dark value-type">Type: array of string</span><br/>
+<span class="description">Configuration options for the font family, including paths to font files</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="fontfamilies_items_options_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies" onclick="anchorLink('fontfamilies')">fontfamilies</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items" onclick="anchorLink('fontfamilies_items')">fontfamilies items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items_options" onclick="anchorLink('fontfamilies_items_options')">options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#fontfamilies_items_options_items" onclick="anchorLink('fontfamilies_items_options_items')">options items</a></div><span class="badge badge-dark value-type">Type: string</span><br/>
+
+        
+
+        
+        
+
+        
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-05-13 at 01:08:04 +0200</p>
+    </footer></body>
+</html>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fsoedjede.github.io/posts/2022-04-27-using-weblate-without-linked-vcs-repository/index.html</loc>
-    <lastmod>2023-01-31T02:29:44.467Z</lastmod>
-  </url>
-  <url>
-    <loc>https://fsoedjede.github.io/posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html</loc>
-    <lastmod>2023-01-31T02:29:45.268Z</lastmod>
+    <loc>https://fsoedjede.github.io/about.html</loc>
+    <lastmod>2023-01-10T01:04:51.000Z</lastmod>
   </url>
   <url>
     <loc>https://fsoedjede.github.io/posts/2022-04-27-why-i-started-contributing-to-opensource/index.html</loc>
-    <lastmod>2023-01-31T02:29:45.628Z</lastmod>
+    <lastmod>2023-01-10T01:04:51.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fsoedjede.github.io/posts/2022-04-27-using-weblate-without-linked-vcs-repository/index.html</loc>
+    <lastmod>2023-01-10T01:04:51.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fsoedjede.github.io/posts/2023-01-10-setting-redis-user-and-password-in-docker-environnement/index.html</loc>
+    <lastmod>2023-01-10T01:04:51.000Z</lastmod>
   </url>
   <url>
     <loc>https://fsoedjede.github.io/index.html</loc>
-    <lastmod>2023-01-31T02:29:46.088Z</lastmod>
-  </url>
-  <url>
-    <loc>https://fsoedjede.github.io/about.html</loc>
-    <lastmod>2023-01-31T02:29:46.428Z</lastmod>
+    <lastmod>2023-01-10T01:04:51.000Z</lastmod>
   </url>
 </urlset>
