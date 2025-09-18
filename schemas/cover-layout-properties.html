@@ -65,40 +65,6 @@
         </div>
     </div>
 </div>
-<div class="accordion" id="accordionprevent-hyphenation">
-    <div class="card">
-        <div class="card-header" id="headingprevent-hyphenation">
-            <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#prevent-hyphenation"
-                        aria-expanded="" aria-controls="prevent-hyphenation" onclick="setAnchor('#prevent-hyphenation')"><span class="property-name">prevent-hyphenation</span></button>
-            </h2>
-        </div>
-
-        <div id="prevent-hyphenation"
-             class="collapse property-definition-div" aria-labelledby="headingprevent-hyphenation"
-             data-parent="#accordionprevent-hyphenation">
-            <div class="card-body pl-5">
-
-    <div class="breadcrumbs">root
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#prevent-hyphenation" onclick="anchorLink('prevent-hyphenation')">prevent-hyphenation</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
-<span class="description"><p>Keep words intact across lines by disabling automatic hyphenation</p>
-</span>
-        
-
-        
-        
-
-        
-            </div>
-        </div>
-    </div>
-</div>
 <div class="accordion" id="accordioninner-bleed-width">
     <div class="card">
         <div class="card-header" id="headinginner-bleed-width">
@@ -120,9 +86,9 @@
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#inner-bleed-width" onclick="anchorLink('inner-bleed-width')">inner-bleed-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "10mm"</span><br/>
+    <a href="#inner-bleed-width" onclick="anchorLink('inner-bleed-width')">inner-bleed-width</a></div><span class="badge badge-dark value-type">Type: string or null</span> <span class="badge badge-success default-value">Default: "10mm"</span><br/>
 <span class="description"><p>Width of the inner bleed area in mm (preferred) or cm</p>
-</span><span class="pattern-value" id="inner-bleed-width_pattern">Must match regular expression: <code>^(\d+(\.\d+)?)(mm|cm)$</code></span>
+</span><span class="pattern-value" id="inner-bleed-width_pattern">Must match regular expression: <code>^((\d+(\.\d+)?)(mm|cm)|)$</code></span>
         
 
         
@@ -154,9 +120,9 @@
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#whole-background-color" onclick="anchorLink('whole-background-color')">whole-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
+    <a href="#whole-background-color" onclick="anchorLink('whole-background-color')">whole-background-color</a></div><span class="badge badge-dark value-type">Type: string or null</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
 <span class="description"><p>Background color for the entire cover as a hex color code</p>
-</span><span class="pattern-value" id="whole-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="whole-background-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -224,7 +190,7 @@
         </svg>
     <a href="#back-background-color" onclick="anchorLink('back-background-color')">back-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
 <span class="description"><p>Background color for the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-background-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -258,7 +224,7 @@
         </svg>
     <a href="#back-background-color-gradient-top" onclick="anchorLink('back-background-color-gradient-top')">back-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Top color for gradient background on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-background-color-gradient-top_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -292,7 +258,7 @@
         </svg>
     <a href="#back-background-color-gradient-bottom" onclick="anchorLink('back-background-color-gradient-bottom')">back-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Bottom color for gradient background on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-background-color-gradient-bottom_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -394,7 +360,7 @@
         </svg>
     <a href="#back-margin-box-width" onclick="anchorLink('back-margin-box-width')">back-margin-box-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "24mm"</span><br/>
 <span class="description"><p>Width of the margin box on the back cover in mm (preferred) or cm</p>
-</span><span class="pattern-value" id="back-margin-box-width_pattern">Must match regular expression: <code>^(\d+(\.\d+)?)(mm|cm)$</code></span>
+</span><span class="pattern-value" id="back-margin-box-width_pattern">Must match regular expression: <code>^((\d+(\.\d+)?)(mm|cm)|)$</code></span>
         
 
         
@@ -428,7 +394,7 @@
         </svg>
     <a href="#back-margin-box-background-color" onclick="anchorLink('back-margin-box-background-color')">back-margin-box-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#7EA117"</span><br/>
 <span class="description"><p>Background color for the margin box on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-margin-box-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-margin-box-background-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -462,7 +428,7 @@
         </svg>
     <a href="#back-margin-box-background-color-gradient-top" onclick="anchorLink('back-margin-box-background-color-gradient-top')">back-margin-box-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Top color for gradient background on back cover margin box as a hex color code</p>
-</span><span class="pattern-value" id="back-margin-box-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-margin-box-background-color-gradient-top_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -496,7 +462,7 @@
         </svg>
     <a href="#back-margin-box-background-color-gradient-bottom" onclick="anchorLink('back-margin-box-background-color-gradient-bottom')">back-margin-box-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Bottom color for gradient background on back cover margin box as a hex color code</p>
-</span><span class="pattern-value" id="back-margin-box-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-margin-box-background-color-gradient-bottom_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -564,7 +530,7 @@
         </svg>
     <a href="#back-title-text-color" onclick="anchorLink('back-title-text-color')">back-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
 <span class="description"><p>Text color for the title on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-title-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -598,7 +564,7 @@
         </svg>
     <a href="#back-title-text-border-color" onclick="anchorLink('back-title-text-border-color')">back-title-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the title on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-title-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-title-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -632,7 +598,7 @@
         </svg>
     <a href="#back-title-text-border-line-width" onclick="anchorLink('back-title-text-border-line-width')">back-title-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the title on the back cover (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="back-title-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -744,7 +710,7 @@
         </svg>
     <a href="#back-title-font-size" onclick="anchorLink('back-title-font-size')">back-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "18pt"</span><br/>
 <span class="description"><p>Font size for the title on the back cover with unit (e.g., 18pt)</p>
-</span>
+</span><span class="pattern-value" id="back-title-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -857,6 +823,74 @@
         </div>
     </div>
 </div>
+<div class="accordion" id="accordionback-title-hide-volume">
+    <div class="card">
+        <div class="card-header" id="headingback-title-hide-volume">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-hide-volume"
+                        aria-expanded="" aria-controls="back-title-hide-volume" onclick="setAnchor('#back-title-hide-volume')"><span class="property-name">back-title-hide-volume</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-hide-volume"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-hide-volume"
+             data-parent="#accordionback-title-hide-volume">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-hide-volume" onclick="anchorLink('back-title-hide-volume')">back-title-hide-volume</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the volume in the back cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-title-hide-volume-title">
+    <div class="card">
+        <div class="card-header" id="headingback-title-hide-volume-title">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-title-hide-volume-title"
+                        aria-expanded="" aria-controls="back-title-hide-volume-title" onclick="setAnchor('#back-title-hide-volume-title')"><span class="property-name">back-title-hide-volume-title</span></button>
+            </h2>
+        </div>
+
+        <div id="back-title-hide-volume-title"
+             class="collapse property-definition-div" aria-labelledby="headingback-title-hide-volume-title"
+             data-parent="#accordionback-title-hide-volume-title">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-title-hide-volume-title" onclick="anchorLink('back-title-hide-volume-title')">back-title-hide-volume-title</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the volume subtitle in the back cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
 <div class="accordion" id="accordionback-title-inline">
     <div class="card">
         <div class="card-header" id="headingback-title-inline">
@@ -914,7 +948,7 @@
         </svg>
     <a href="#back-content-text-color" onclick="anchorLink('back-content-text-color')">back-content-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#000000"</span><br/>
 <span class="description"><p>Text color for the content on the back cover as a hex color code</p>
-</span><span class="pattern-value" id="back-content-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="back-content-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -948,7 +982,7 @@
         </svg>
     <a href="#back-content-font-size" onclick="anchorLink('back-content-font-size')">back-content-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "12pt"</span><br/>
 <span class="description"><p>Font size for the content on the back cover with unit (e.g., 12pt)</p>
-</span>
+</span><span class="pattern-value" id="back-content-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -1061,6 +1095,538 @@
         </div>
     </div>
 </div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map" onclick="setAnchor('#back-thumbnail-top-line-skip-map')"><span class="property-name">back-thumbnail-top-line-skip-map</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map"
+             data-parent="#accordionback-thumbnail-top-line-skip-map">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Mapping by language of number of lines to skip before placing the thumbnail on the back cover</p>
+</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_ar">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_ar">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_ar"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_ar" onclick="setAnchor('#back-thumbnail-top-line-skip-map_ar')"><span class="property-name">ar</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_ar"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_ar"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_ar">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')">ar</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span>
+
+    
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_de">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_de">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_de"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_de" onclick="setAnchor('#back-thumbnail-top-line-skip-map_de')"><span class="property-name">de</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_de"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_de"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_de">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_de" onclick="anchorLink('back-thumbnail-top-line-skip-map_de')">de</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_en">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_en">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_en"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_en" onclick="setAnchor('#back-thumbnail-top-line-skip-map_en')"><span class="property-name">en</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_en"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_en"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_en">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_en" onclick="anchorLink('back-thumbnail-top-line-skip-map_en')">en</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_es">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_es">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_es"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_es" onclick="setAnchor('#back-thumbnail-top-line-skip-map_es')"><span class="property-name">es</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_es"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_es"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_es">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_es" onclick="anchorLink('back-thumbnail-top-line-skip-map_es')">es</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_es-cu">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_es-cu">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_es-cu"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_es-cu" onclick="setAnchor('#back-thumbnail-top-line-skip-map_es-cu')"><span class="property-name">es-cu</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_es-cu"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_es-cu"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_es-cu">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_es-cu" onclick="anchorLink('back-thumbnail-top-line-skip-map_es-cu')">es-cu</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_fr">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_fr">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_fr"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_fr" onclick="setAnchor('#back-thumbnail-top-line-skip-map_fr')"><span class="property-name">fr</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_fr"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_fr"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_fr">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_fr" onclick="anchorLink('back-thumbnail-top-line-skip-map_fr')">fr</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_hi">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_hi">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_hi"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_hi" onclick="setAnchor('#back-thumbnail-top-line-skip-map_hi')"><span class="property-name">hi</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_hi"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_hi"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_hi">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_hi" onclick="anchorLink('back-thumbnail-top-line-skip-map_hi')">hi</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_it">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_it">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_it"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_it" onclick="setAnchor('#back-thumbnail-top-line-skip-map_it')"><span class="property-name">it</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_it"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_it"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_it">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_it" onclick="anchorLink('back-thumbnail-top-line-skip-map_it')">it</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_mg">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_mg">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_mg"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_mg" onclick="setAnchor('#back-thumbnail-top-line-skip-map_mg')"><span class="property-name">mg</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_mg"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_mg"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_mg">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_mg" onclick="anchorLink('back-thumbnail-top-line-skip-map_mg')">mg</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_pt">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_pt">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_pt"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_pt" onclick="setAnchor('#back-thumbnail-top-line-skip-map_pt')"><span class="property-name">pt</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_pt"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_pt"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_pt">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_pt" onclick="anchorLink('back-thumbnail-top-line-skip-map_pt')">pt</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_pt-ao">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_pt-ao">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_pt-ao"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_pt-ao" onclick="setAnchor('#back-thumbnail-top-line-skip-map_pt-ao')"><span class="property-name">pt-ao</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_pt-ao"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_pt-ao"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_pt-ao">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_pt-ao" onclick="anchorLink('back-thumbnail-top-line-skip-map_pt-ao')">pt-ao</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_pt-br">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_pt-br">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_pt-br"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_pt-br" onclick="setAnchor('#back-thumbnail-top-line-skip-map_pt-br')"><span class="property-name">pt-br</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_pt-br"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_pt-br"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_pt-br">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_pt-br" onclick="anchorLink('back-thumbnail-top-line-skip-map_pt-br')">pt-br</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_ru">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_ru">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_ru"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_ru" onclick="setAnchor('#back-thumbnail-top-line-skip-map_ru')"><span class="property-name">ru</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_ru"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_ru"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_ru">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_ru" onclick="anchorLink('back-thumbnail-top-line-skip-map_ru')">ru</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionback-thumbnail-top-line-skip-map_zh-hans">
+    <div class="card">
+        <div class="card-header" id="headingback-thumbnail-top-line-skip-map_zh-hans">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#back-thumbnail-top-line-skip-map_zh-hans"
+                        aria-expanded="" aria-controls="back-thumbnail-top-line-skip-map_zh-hans" onclick="setAnchor('#back-thumbnail-top-line-skip-map_zh-hans')"><span class="property-name">zh-hans</span></button>
+            </h2>
+        </div>
+
+        <div id="back-thumbnail-top-line-skip-map_zh-hans"
+             class="collapse property-definition-div" aria-labelledby="headingback-thumbnail-top-line-skip-map_zh-hans"
+             data-parent="#accordionback-thumbnail-top-line-skip-map_zh-hans">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map" onclick="anchorLink('back-thumbnail-top-line-skip-map')">back-thumbnail-top-line-skip-map</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#back-thumbnail-top-line-skip-map_zh-hans" onclick="anchorLink('back-thumbnail-top-line-skip-map_zh-hans')">zh-hans</a></div><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+<span class="description"><p>Number of lines to skip before placing the thumbnail</p>
+</span><a href="#back-thumbnail-top-line-skip-map_ar" onclick="anchorLink('back-thumbnail-top-line-skip-map_ar')" class="ref-link">Same definition as ar</a>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="accordion" id="accordionspine-background-color">
     <div class="card">
         <div class="card-header" id="headingspine-background-color">
@@ -1084,7 +1650,7 @@
         </svg>
     <a href="#spine-background-color" onclick="anchorLink('spine-background-color')">spine-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
 <span class="description"><p>Background color for the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-background-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1118,7 +1684,7 @@
         </svg>
     <a href="#spine-background-color-gradient-top" onclick="anchorLink('spine-background-color-gradient-top')">spine-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Top color for gradient background on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-background-color-gradient-top_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1152,7 +1718,7 @@
         </svg>
     <a href="#spine-background-color-gradient-bottom" onclick="anchorLink('spine-background-color-gradient-bottom')">spine-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Bottom color for gradient background on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-background-color-gradient-bottom_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1220,7 +1786,7 @@
         </svg>
     <a href="#spine-author-text-color" onclick="anchorLink('spine-author-text-color')">spine-author-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
 <span class="description"><p>Text color for the author name on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-author-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-author-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1254,7 +1820,7 @@
         </svg>
     <a href="#spine-author-text-border-color" onclick="anchorLink('spine-author-text-border-color')">spine-author-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the author name on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-author-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-author-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1288,7 +1854,7 @@
         </svg>
     <a href="#spine-author-text-border-line-width" onclick="anchorLink('spine-author-text-border-line-width')">spine-author-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the author on the spine (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="spine-author-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -1400,7 +1966,7 @@
         </svg>
     <a href="#spine-author-font-size" onclick="anchorLink('spine-author-font-size')">spine-author-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "16pt"</span><br/>
 <span class="description"><p>Font size for the author name on the spine with unit (e.g., 16pt)</p>
-</span>
+</span><span class="pattern-value" id="spine-author-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -1445,6 +2011,108 @@
         </div>
     </div>
 </div>
+<div class="accordion" id="accordionspine-title-hide-subtitle">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-hide-subtitle">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-hide-subtitle"
+                        aria-expanded="" aria-controls="spine-title-hide-subtitle" onclick="setAnchor('#spine-title-hide-subtitle')"><span class="property-name">spine-title-hide-subtitle</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-hide-subtitle"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-hide-subtitle"
+             data-parent="#accordionspine-title-hide-subtitle">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-hide-subtitle" onclick="anchorLink('spine-title-hide-subtitle')">spine-title-hide-subtitle</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the subtitle in the spine cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-hide-volume">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-hide-volume">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-hide-volume"
+                        aria-expanded="" aria-controls="spine-title-hide-volume" onclick="setAnchor('#spine-title-hide-volume')"><span class="property-name">spine-title-hide-volume</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-hide-volume"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-hide-volume"
+             data-parent="#accordionspine-title-hide-volume">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-hide-volume" onclick="anchorLink('spine-title-hide-volume')">spine-title-hide-volume</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the volume in the spine cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionspine-title-hide-volume-title">
+    <div class="card">
+        <div class="card-header" id="headingspine-title-hide-volume-title">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#spine-title-hide-volume-title"
+                        aria-expanded="" aria-controls="spine-title-hide-volume-title" onclick="setAnchor('#spine-title-hide-volume-title')"><span class="property-name">spine-title-hide-volume-title</span></button>
+            </h2>
+        </div>
+
+        <div id="spine-title-hide-volume-title"
+             class="collapse property-definition-div" aria-labelledby="headingspine-title-hide-volume-title"
+             data-parent="#accordionspine-title-hide-volume-title">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#spine-title-hide-volume-title" onclick="anchorLink('spine-title-hide-volume-title')">spine-title-hide-volume-title</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the volume subtitle in the spine cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
 <div class="accordion" id="accordionspine-title-text-color">
     <div class="card">
         <div class="card-header" id="headingspine-title-text-color">
@@ -1468,7 +2136,7 @@
         </svg>
     <a href="#spine-title-text-color" onclick="anchorLink('spine-title-text-color')">spine-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
 <span class="description"><p>Text color for the title on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-title-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1502,7 +2170,7 @@
         </svg>
     <a href="#spine-title-text-border-color" onclick="anchorLink('spine-title-text-border-color')">spine-title-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the title on the spine as a hex color code</p>
-</span><span class="pattern-value" id="spine-title-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="spine-title-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1536,7 +2204,7 @@
         </svg>
     <a href="#spine-title-text-border-line-width" onclick="anchorLink('spine-title-text-border-line-width')">spine-title-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the title on the spine (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="spine-title-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -1648,7 +2316,7 @@
         </svg>
     <a href="#spine-title-font-size" onclick="anchorLink('spine-title-font-size')">spine-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "18pt"</span><br/>
 <span class="description"><p>Font size for the title on the spine with unit (e.g., 18pt)</p>
-</span>
+</span><span class="pattern-value" id="spine-title-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -1716,7 +2384,7 @@
         </svg>
     <a href="#front-background-color" onclick="anchorLink('front-background-color')">front-background-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#FFFFFF"</span><br/>
 <span class="description"><p>Background color for the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-background-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-background-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1750,7 +2418,7 @@
         </svg>
     <a href="#front-background-color-gradient-top" onclick="anchorLink('front-background-color-gradient-top')">front-background-color-gradient-top</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Top color for gradient background on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-background-color-gradient-top_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-background-color-gradient-top_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1784,7 +2452,7 @@
         </svg>
     <a href="#front-background-color-gradient-bottom" onclick="anchorLink('front-background-color-gradient-bottom')">front-background-color-gradient-bottom</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Bottom color for gradient background on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-background-color-gradient-bottom_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-background-color-gradient-bottom_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1945,7 +2613,7 @@
         </svg>
     <a href="#front-author-text-color" onclick="anchorLink('front-author-text-color')">front-author-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#000000"</span><br/>
 <span class="description"><p>Text color for the author name on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-author-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-author-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -1979,7 +2647,7 @@
         </svg>
     <a href="#front-author-text-border-color" onclick="anchorLink('front-author-text-border-color')">front-author-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the author name on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-author-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-author-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -2013,7 +2681,7 @@
         </svg>
     <a href="#front-author-text-border-line-width" onclick="anchorLink('front-author-text-border-line-width')">front-author-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the author on the front cover (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="front-author-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -2125,7 +2793,7 @@
         </svg>
     <a href="#front-author-font-size" onclick="anchorLink('front-author-font-size')">front-author-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "24pt"</span><br/>
 <span class="description"><p>Font size for the author name on the front cover with unit (e.g., 24pt)</p>
-</span>
+</span><span class="pattern-value" id="front-author-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -2662,6 +3330,40 @@
         </div>
     </div>
 </div>
+<div class="accordion" id="accordionfront-title-hide-volume">
+    <div class="card">
+        <div class="card-header" id="headingfront-title-hide-volume">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#front-title-hide-volume"
+                        aria-expanded="" aria-controls="front-title-hide-volume" onclick="setAnchor('#front-title-hide-volume')"><span class="property-name">front-title-hide-volume</span></button>
+            </h2>
+        </div>
+
+        <div id="front-title-hide-volume"
+             class="collapse property-definition-div" aria-labelledby="headingfront-title-hide-volume"
+             data-parent="#accordionfront-title-hide-volume">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#front-title-hide-volume" onclick="anchorLink('front-title-hide-volume')">front-title-hide-volume</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+<span class="description"><p>Whether to display the volume in the front cover or not</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
 <div class="accordion" id="accordionfront-title-hide-volume-title">
     <div class="card">
         <div class="card-header" id="headingfront-title-hide-volume-title">
@@ -2719,7 +3421,7 @@
         </svg>
     <a href="#front-title-text-color" onclick="anchorLink('front-title-text-color')">front-title-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
 <span class="description"><p>Text color for the title on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-title-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-title-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -2753,7 +3455,7 @@
         </svg>
     <a href="#front-title-text-border-color" onclick="anchorLink('front-title-text-border-color')">front-title-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the title on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-title-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-title-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -2787,7 +3489,7 @@
         </svg>
     <a href="#front-title-text-border-line-width" onclick="anchorLink('front-title-text-border-line-width')">front-title-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the title on the front cover (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="front-title-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -2899,7 +3601,7 @@
         </svg>
     <a href="#front-title-font-size" onclick="anchorLink('front-title-font-size')">front-title-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "60pt"</span><br/>
 <span class="description"><p>Font size for the title on the front cover with unit (e.g., 60pt)</p>
-</span>
+</span><span class="pattern-value" id="front-title-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -3459,7 +4161,7 @@
         </svg>
     <a href="#front-epigraph-text-color" onclick="anchorLink('front-epigraph-text-color')">front-epigraph-text-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "#547516"</span><br/>
 <span class="description"><p>Text color for the epigraph on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-epigraph-text-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-epigraph-text-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -3493,7 +4195,7 @@
         </svg>
     <a href="#front-epigraph-text-border-color" onclick="anchorLink('front-epigraph-text-border-color')">front-epigraph-text-border-color</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
 <span class="description"><p>Text border color for the epigraph on the front cover as a hex color code</p>
-</span><span class="pattern-value" id="front-epigraph-text-border-color_pattern">Must match regular expression: <code>^#([A-Fa-f0-9]{6})$</code></span>
+</span><span class="pattern-value" id="front-epigraph-text-border-color_pattern">Must match regular expression: <code>^(#([A-Fa-f0-9]{6})|)$</code></span>
         
 
         
@@ -3527,7 +4229,7 @@
         </svg>
     <a href="#front-epigraph-text-border-line-width" onclick="anchorLink('front-epigraph-text-border-line-width')">front-epigraph-text-border-line-width</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "1.25pt"</span><br/>
 <span class="description"><p>Line width for the text border of the epigraph on the front cover (Values in pt or mm)</p>
-</span>
+</span><span class="pattern-value" id="front-epigraph-text-border-line-width_pattern">Must match regular expression: <code>^\d+(\.\d+)?(pt)?$</code></span>
         
 
         
@@ -3639,7 +4341,7 @@
         </svg>
     <a href="#front-epigraph-font-size" onclick="anchorLink('front-epigraph-font-size')">front-epigraph-font-size</a></div><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "16pt"</span><br/>
 <span class="description"><p>Font size for the epigraph on the front cover with unit (e.g., 16pt)</p>
-</span>
+</span><span class="pattern-value" id="front-epigraph-font-size_pattern">Must match regular expression: <code>^\d+(\.\d+)?pt$</code></span>
         
 
         
@@ -4415,6 +5117,6 @@
 </div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-06-22 at 22:15:46 +0200</p>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-09-18 at 17:54:33 +0200</p>
     </footer></body>
 </html>
