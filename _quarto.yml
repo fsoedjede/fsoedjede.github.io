@@ -2,6 +2,7 @@ project:
     type: website
     resources:
         - schemas/**
+        - docs/**
 
 website:
     title: 'Felix SOEDJEDE'
